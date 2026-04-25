@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <a class="arrowtop" href="#top" ><i class="fa-solid fa-arrow-up"></i></a>
+    <header style="position: relative;">
+        <section id="top" class="hero-section">
+            <div class="sparkle left"><i class="fa-regular fa-star"></i></div>
+            <div class="sparkle right"><i class="fa-regular fa-star"></i></div>
+
+            <div class="main-container">
+                <h1 class="main-title">Ən mükəmməl səyahət üçün ən yaxşı <span style="color: #318dbb;">avtomobillər</span>.</h1>
+                <p class="main-description">
+                  "Biz ən seçkin avtomobilləri üstün xidmət keyfiyyəti ilə təqdim edirik! Avtomobil icarəsi üzrə ekspertlər kimi, səyahətinizin tam qüsursuz olmasını təmin edirik. Komfortun etibarlılıqla birləşdiyi məkanda tətilinizin dadını bizimlə çıxarın! Hər sürüşü unudulmaz edir, hər bir səfərdə təhlükəsizliyinizə üstünlük veririk."
+                </p>
+                <a class="learn-more-btn">Learn More</a>
+            </div>
+        </section>
+        <div class="header-top" style="position: absolute; top: 0; display: flex; justify-content: space-evenly;width: 100%; align-items: center; flex-wrap: wrap; ">
+           <div> <img class="rotateLogo" style="width: 140px;" src="img/logo.webp" alt="logo"/></div>
+            <ul style="display: flex; justify-content: center; align-items: center; gap: 20px;list-style: none">
+                <li class="headerSiyahi"><a href="#Popular">Məşhur maşınlar</a></li>
+                <li class="headerSiyahi"><a href="#Rey">Rəylər</a></li>
+                <li class="headerSiyahi"><a href="#AboutPart">Haqqımızda</a></li>
+            </ul>
+           <div class="search"> <input style="background:black; width: 300px; height: 32px; border: 1px solid #318dbb; padding-left: 7px;" type="text" placeholder="Axtar..." /></div>
+        </div>
+        <!--Mobil HeaderTop-->
+        <div  id="menubarCode" style=" opacity: 0;">
+             <div>
+                <ul class="ContainerUL">
+                    <li class="MenuIn1"><a href="#Popular">Məşhur maşınlar</a></li>
+                    <li class="MenuIn2"><a href="#Rey">Rəylər</a></li>
+                    <li class="MenuIn3"><a href="#AboutPart">Haqqımızda</a></li>
+                </ul>
+             </div>
+             <div style="display: flex; align-items: center; justify-content: space-between; padding: 0 20px; margin-top: 10px;">
+                <img style="width: 100px;" src="img/logo.webp" alt="logo"/>
+                <img  style="width: 120px; padding-right: 20px;"  src="img/carlogo.png" alt="carlogo"/>
+             </div>
+        </div>
+        <div class="mobil-headertop">
+           <div> <img class="rotateLogo" style="width: 140px;" src="img/logo.webp" alt="logo"/></div>
+             <div class="Menubar"><i onclick="OpenMenu()" id="MARK" class="fa-solid fa-bars-staggered"></i></div>
+        </div>
+    </header>
+
+    <main class="recommendation-section">
+    <div id="Popular" class="section-header">
+        <h2 class="section-title">Məşhur <span class="white-text">Maşınlar</span></h2>
+        <a href="#" class="view-all">View All</a>
+    </div>
+
+    <div class="cars-grid">
+        <div class="car-card"  data-aos="fade-up" data-aos-duration="1500">
+            <div class="card-top">
+                <div>
+                    <h3 class="car-name">BMW M3</h3>
+                </div>
+                <span class="heart-icon">❤️</span>
+            </div>
+            
+            <div class="car-img-box">
+                <img src="img/car1.jpg" alt="All New Rush">
+            </div>
+
+            <div class="car-specs">
+                <span>⛽ 90L</span>
+                <span>⚙️ təlimat</span>
+                <span>👥 2 Nəfər</span>
+            </div>
+
+            <div class="card-footer">
+                <span class="price">$82K</span>
+                <button class="buy-btn">Buy</button>
+            </div>
+        </div>
+
+          <div class="car-card" data-aos="fade-up" data-aos-duration="1500">
+            <div class="card-top">
+                <div>
+                    <h3 class="car-name">BMW M5</h3>
+                </div>
+                <span class="heart-icon">❤️</span>
+            </div>
+            
+            <div class="car-img-box">
+                <img src="img/car2.jpg" alt="All New Rush">
+            </div>
+
+            <div class="car-specs">
+                <span>⛽ 80L</span>
+                <span>⚙️ təlimat</span>
+                <span>👥 7 Nəfər</span>
+            </div>
+
+            <div class="card-footer">
+                <span class="price">$96K</span>
+                <button class="buy-btn">Buy</button>
+            </div>
+        </div>
+          <div class="car-card" data-aos="fade-up" data-aos-duration="1500">
+            <div class="card-top">
+                <div>
+                    <h3 class="car-name">BMW M4</h3>
+                </div>
+                <span class="heart-icon">❤️</span>
+            </div>
+            
+            <div class="car-img-box">
+                <img src="img/car3.jpg" alt="All New Rush">
+            </div>
+
+            <div class="car-specs">
+                <span>⛽ 100L</span>
+                <span>⚙️ təlimat</span>
+                <span>👥 23 Nəfər</span>
+            </div>
+
+            <div class="card-footer">
+                <span class="price">$102K</span>
+                <button class="buy-btn">Buy</button>
+            </div>
+        </div>
+          <div class="car-card" data-aos="fade-up" data-aos-duration="1500">
+            <div class="card-top">
+                <div>
+                    <h3 class="car-name">BMW M6</h3>
+                </div>
+                <span class="heart-icon">❤️</span>
+            </div>
+            
+            <div class="car-img-box">
+                <img src="img/car4.jpg" alt="All New Rush">
+            </div>
+
+            <div class="car-specs">
+                <span>⛽ 78L</span>
+                <span>⚙️ təlimat</span>
+                <span>👥 13 Nəfər</span>
+            </div>
+
+            <div class="card-footer">
+                <span class="price">$107K</span>
+                <button class="buy-btn">Buy</button>
+            </div>
+        </div>
+          <div class="car-card" data-aos="fade-up" data-aos-duration="1500">
+            <div class="card-top">
+                <div>
+                    <h3 class="car-name">BMW Z4</h3>
+                </div>
+                <span class="heart-icon">❤️</span>
+            </div>
+            
+            <div class="car-img-box">
+                <img src="img/car5.jpg" alt="All New Rush">
+            </div>
+
+            <div class="car-specs">
+                <span>⛽ 110L</span>
+                <span>⚙️ təlimat</span>
+                <span>👥 78 Nəfər</span>
+            </div>
+
+            <div class="card-footer">
+                <span class="price">$293K</span>
+                <button class="buy-btn">Buy</button>
+            </div>
+        </div>
+          <div class="car-card" data-aos="fade-up" data-aos-duration="1500">
+            <div class="card-top">
+                <div>
+                    <h3 class="car-name">BMW 8 Series</h3>
+                </div>
+                <span class="heart-icon">❤️</span>
+            </div>
+            
+            <div class="car-img-box">
+                <img src="img/car6.jpg" alt="All New Rush">
+            </div>
+
+            <div class="car-specs">
+                <span>⛽ 120L</span>
+                <span>⚙️ təlimat</span>
+                <span>👥 67 Nəfər</span>
+            </div>
+
+            <div class="card-footer">
+                <span class="price">$127K</span>
+                <button class="buy-btn">Buy</button>
+            </div>
+        </div>
+          <div class="car-card" data-aos="fade-up" data-aos-duration="1500">
+            <div class="card-top">
+                <div>
+                    <h3 class="car-name">BMW 5 Series</h3>
+                    
+                </div>
+                <span class="heart-icon">❤️</span>
+            </div>
+            
+            <div class="car-img-box">
+                <img src="img/car7.jpg" alt="All New Rush">
+            </div>
+
+            <div class="car-specs">
+                <span>⛽ 123L</span>
+                <span>⚙️ təlimat</span>
+                <span>👥 77 Nəfər</span>
+            </div>
+
+            <div class="card-footer">
+                <span class="price">$254K</span>
+                <button class="buy-btn">Buy</button>
+            </div>
+        </div>
+          <div class="car-card" data-aos="fade-up" data-aos-duration="1500">
+            <div class="card-top">
+                <div>
+                    <h3 class="car-name">BMW i4</h3>
+                    <p class="car-type">SUV</p>
+                </div>
+                <span class="heart-icon">❤️</span>
+            </div>
+            
+            <div class="car-img-box">
+                <img src="img/car8.jpg" alt="All New Rush">
+            </div>
+
+            <div class="car-specs">
+                <span>⛽ 130L</span>
+                <span>⚙️ təlimat</span>
+                <span>👥 291 Nəfər</span>
+            </div>
+
+            <div class="card-footer">
+                <span class="price">$176K</span>
+                <button class="buy-btn">Buy</button>
+            </div>
+        </div>
+
+        </div>
+
+       <h2 data-aos="fade-right" data-aos-duration="1500" style="padding: 40px 30px; font-size: 1.8em; color: #3192c1;">Haqqımızda</h2>
+        <section class="about-section">
+           
+    <div id="AboutPart" class="container">
+        <div class="about-wrapper">
+            <div class="about-img-box">
+                <div class="image-border"></div>
+                <img data-aos="zoom-out-up"data-aos-duration="1500" src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&q=80" alt="BMW Haqqımızda">
+            </div>
+
+            <div class="about-text-box">
+                <h2 data-aos="fade-right" data-aos-duration="1500" class="about-title">Mükəmməl <span>Performansın</span> Ünvanı</h2>
+                <p class="about-description">
+                    BMW dünyasına xoş gəlmisiniz. Biz sadəcə avtomobil deyil, hər döngədə hiss edəcəyiniz bir ehtiras yaradırıq. Onilliklər boyu davam edən mühəndislik sənətimizlə, sürət və təhlükəsizliyin mükəmməl balansını təqdim edirik.
+                </p>
+                
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">100+</span>
+                        <span class="stat-label">İllik Təcrübə</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">M Power</span>
+                        <span class="stat-label">Yüksək Güc</span>
+                    </div>
+                </div>
+
+                <a href="#" class="about-btn">Daha Çox Öyrən</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--slider-->
+    <div class="Slider"  data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
+            <swiper-container class="mySwiper" navigation="true" autoplay="true">
+                        <swiper-slide class="Inslide1"><div class="bgopacity"><h2 style="padding: 30px; font-weight: 700; font-size: 2em; color: #e10600;">BMW 8 Series</h2></div> </swiper-slide>
+                        <swiper-slide class="Inslide2"> <div class="bgopacity"><h2 style="padding: 30px; font-weight: 700; font-size: 2em; color: #e10600;">BMW M3</h2></div> </swiper-slide>
+                        <swiper-slide class="Inslide3"><div class="bgopacity"><h2 style="padding: 30px; font-weight: 700; font-size: 2em; color: #e10600;">BMW M4 </h2></div> </swiper-slide>
+                        <swiper-slide class="Inslide4"><div class="bgopacity"><h2 style="padding: 30px; font-weight: 700; font-size: 2em; color: #e10600;">BMW M9 </h2></div></swiper-slide>
+                        <swiper-slide class="Inslide5"><div class="bgopacity"><h2 style="padding: 30px; font-weight: 700; font-size: 2em; color: #e10600;">BMW M4 </h2></div></swiper-slide>
+                        <swiper-slide  class="Inslide6"><div class="bgopacity"><h2 style="padding: 30px; font-weight: 700; font-size: 2em; color: #e10600;">BMW Z4 </h2></div></swiper-slide>
+                        <swiper-slide  class="Inslide7"><div class="bgopacity"><h2 style="padding: 30px; font-weight: 700; font-size: 2em; color: #e10600;">BMW M9 f90</h2></div></swiper-slide>
+                        <swiper-slide   class="Inslide8"><div class="bgopacity"><h2 style="padding: 30px; font-weight: 700; font-size: 2em; color: #e10600;">BMW M9 </h2></div></swiper-slide>
+                        <swiper-slide class="Inslide9"><div class="bgopacity"><h2 style="padding: 30px; font-weight: 700; font-size: 2em; color: #e10600;">BMW M4 </h2></div></swiper-slide>
+            </swiper-container>
+
+    </div>
+<!--slider-->
+<section class="comfort-section">
+    <div class="container">
+        <div class="section-header">
+            <h2 data-aos="fade-left" data-aos-duration="1500" class="maintitle">Daxili <span>Mükəmməllik</span></h2>
+            <p class="subtitle">Hər detal sürücü və sərnişin komfortu üçün yenidən dizayn edildi.</p>
+        </div>
+
+        <div class="comfort-grid">
+            <div class="comfort-images">
+                <div class="img-wrapper main-img"  data-aos="fade-down"data-aos-duration="1500">
+                    <img src="img/comfort1.jpg" alt="comfort1">
+                    <div class="img-label">M-Sport Sükan</div>
+                </div>
+                <div class="img-wrapper sub-img" data-aos="fade-down"data-aos-duration="1500">
+                    <img src="img/comfort2.webp" alt="comfort2">
+                    <div class="img-label">Lüks Detallar</div>
+                </div>
+            </div>
+
+            <div class="comfort-content">
+                <div class="content-box">
+                    <h3 class="box-title">Sərhədsiz Rahatlıq</h3>
+                    <p>BMW-nin interyeri yüksək texnologiya ilə sənətkarlığın birləşməsidir. Hər bir toxunuşda keyfiyyəti hiss edəcəksiniz.</p>
+                    
+                    <ul class="feature-list">
+                        <li>
+                            <span class="icon">01</span>
+                            <div>
+                                <h4>Premium Materiallar</h4>
+                                <p>Ən zərif Merino dərisi və karbon lifli detallar.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="icon">02</span>
+                            <div>
+                                <h4>Ağıllı İşıqlandırma</h4>
+                                <p>Əhvalınıza uyğun tənzimlənən 64 rəngli daxili atmosfer.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="icon">03</span>
+                            <div>
+                                <h4>Səs İzolyasiyası</h4>
+                                <p>Xarici dünyadan tamamilə təcrid olunmuş səssiz kabin.</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <button class="comfort-cta">Konfiqurasiya Et</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section id="Rey" class="testimonials-section">
+    <h2 data-aos="fade-left" data-aos-duration="1500" class="testimonials-title">Müştərilərimiz nə deyir</h2>
+
+    <div class="testimonials-grid">
+        <div class="testimonial-card"  data-aos="zoom-out-up"data-aos-duration="1500">
+            <div class="user-info">
+                <div class="user-avatar-container">
+                    <img src="img/testimonial1.jpg" alt="testimonial1" class="user-img">
+                </div>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+            </div>
+            <h4 class="user-name">Əsəd Əliyev</h4>
+            <p class="user-comment">
+                "Öz fərdi üslubumu əks etdirən avtomobili tapmaq BMW Cars ilə tanış olana qədər bir sınaq idi. Onların təqdim etdiyi çeşidlərin zənginliyi həqiqətən heyranedicidir."
+            </p>
+        </div>
+
+        <div class="testimonial-card"  data-aos="zoom-out-up"data-aos-duration="1500">
+            <div class="user-info">
+                <div class="user-avatar-container">
+                    <img src="img/testimonial2.jpg" alt="testimonial2" class="user-img">
+                </div>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+            </div>
+            <h4 class="user-name">Aydan Əhmədova</h4>
+            <p class="user-comment">
+               "Yüksək performanslı avtomobillərin daimi axtarışında olan biri kimi, bu platformaya rast gəldiyim üçün çox şadam. Xidmət səviyyəsi isə tam hədəfdir!"
+            </p>
+        </div>
+
+        <div class="testimonial-card"  data-aos="zoom-out-up"data-aos-duration="1500">
+            <div class="user-info">
+                <div class="user-avatar-container">
+                    <img src="img/testimonial3.jpg" alt="testimonial3" class="user-img">
+                </div>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+            </div>
+            <h4 class="user-name">Taleh Orucov</h4>
+            <p class="user-comment">
+               "Avtomobil seçimi sadəcə rəngarəng deyil, həm də ən son trendlərlə tam həmahəngdir. Peşəkarlığın ən yüksək zirvəsi!"
+            </p>
+        </div>
+    </div>
+</section>
+</main>
+<footer class="main-footer">
+    <div class="newsletter-card">
+        <div class="newsletter-text">
+            <h2>YENİLİKLƏRDƏN XƏBƏRDAR OLUN</h2>
+        </div>
+        <div class="newsletter-inputs">
+            <div class="input-group">
+                <span class="icon">✉</span>
+                <input type="email" placeholder="E-poçt ünvanınızı daxil edin">
+            </div>
+            <button class="subscribe-btn">Abunə Ol</button>
+        </div>
+    </div>
+
+    <div class="footer-content">
+        <div class="footer-brand">
+            <div class="footer-logo">
+                <img class="LogoTopBottom" style="width: 140px;" src="img/logo.webp" alt="FK Cars">
+            </div>
+            <p>Sizin stilinizə və büdcənizə uyğun ən premium avtomobilləri təqdim edirik. Bizimlə hər səfər unikal bir təcrübədir.</p>
+            <div class="social-icons">
+                <a><i  class="fa-brands fa-linkedin-in"></i></a>
+                <a><i class="fa-brands fa-instagram"></i></a>
+                <a><i class="fa-brands fa-facebook-f"></i></a>
+                <a><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-links">
+            <h4>ŞİRKƏT</h4>
+            <a>Haqqımızda</a>
+            <a>Xidmətlər</a>
+            <a>Karyera</a>
+            <a>Bloq</a>
+        </div>
+
+        <div class="footer-links">
+            <h4>KÖMƏK</h4>
+            <a >Dəstək Mərkəzi</a>
+            <a >Geri Qaytarma</a>
+            <a >Əlaqə</a>
+            <a >Gizlilik Siyasəti</a>
+        </div>
+
+        <div class="footer-links">
+            <h4>RESURSLAR</h4>
+            <a >E-Kitablar</a>
+            <a>Dərsliklər</a>
+            <a>Youtube Playlist</a>
+            <a>Necə işləyir?</a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>Shop.co © 2000-2026, Bütün hüquqlar qorunur</p>
+        <p>İlahə Vəlizadə</p>
+        <div class="payment-methods">
+            <img src="img/visa.png" alt="Visa">
+            <img src="img/mastercard.png" alt="Mastercard">
+            <img src="img/paypal.png" alt="Paypal">
+            <img src="img/applepay.jpg" alt="Apple Pay">
+        </div>
+    </div>
+</footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-element-bundle.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
